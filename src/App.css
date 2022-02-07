@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+/* .ProductListApp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+.ContainDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ContainDetail img{
+    width: 200px;
+    height: 250px;
+    margin: 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container_balls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.detailLoading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.detailLoading h6{
+    margin-top: -40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_balls ul{
+    list-style: none;
+    display: flex;
+    border-bottom: 10px solid rgb(231, 13, 195);
+}
+
+.container_balls ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(231, 13, 195);
+    margin: 4px;
+    animation: bouncy 0.5s infinite;
+}
+
+@keyframes bouncy{
+    0% {transform: translateY(0);}
+    50%{transform: translateY(-100px);}
+    100%{transform: translateY(0);}
+}
+
+.container_balls ul li:nth-child(1){
+    animation-delay: 0.0s;
+    background-color: #3498DB;
+}
+.container_balls ul li:nth-child(2){
+    animation-delay: 0.1s;
+    background-color: #2ECC71;
+}
+.container_balls ul li:nth-child(3){
+    animation-delay: 0.0s;
+    background-color: #E67E22;
+}
+.container_balls ul li:nth-child(4){
+    animation-delay: 0.1s;
+    background-color: #8E44AD;
+}
+.container_balls ul li:nth-child(5){
+    animation-delay: 0.0s;
+    background-color: #C0392B;
 }
